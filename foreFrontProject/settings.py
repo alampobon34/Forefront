@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-m0m5e@=b8s#j2t35puseb0q8*+hi0=ldqqlmb(pz#is%6hz9@m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["54.198.203.80", "www.forefront-bd.com", "forefront-bd.com"]
 
 
 # Application definition
@@ -87,12 +87,13 @@ WSGI_APPLICATION = 'foreFrontProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'forefront_database',
-        'HOST': '127.0.0.1',
+        'NAME': 'ffbd_djngo',
+        'HOST': 'authentica-data.c9att0s0jgll.ap-southeast-1.rds.amazonaws.com',
         'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'adb_root',
+        'PASSWORD': 'B2QkPy~28tuHam',
     }
+
 }
 
 # Password validation
