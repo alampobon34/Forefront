@@ -96,6 +96,9 @@ DATABASES = {
          'PORT': '3306',
          'USER': 'adb_root',
          'PASSWORD': 'B2QkPy~28tuHam',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        }
      }
 
  }
