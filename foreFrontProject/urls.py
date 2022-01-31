@@ -28,7 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls,name="admin"),
     path('', include('foreFrontApp.urls')),
     path('', include('joinNowApp.urls')),
-    path('', include('jazzmin.urls'))
+    #path('', include('jazzmin.urls'))
 ]
 
 

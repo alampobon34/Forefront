@@ -26,15 +26,15 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'django-insecure-m0m5e@=b8s#j2t35puseb0q8*+hi0=ldqqlmb(pz#is%6hz9@m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['54.198.203.80','54.198.203.80:8000','54.198.203.80:8080','forefront-bd.com','www.forefront-bd.com']
+ALLOWED_HOSTS = ['54.198.203.80','forefront-bd.com','www.forefront-bd.com','127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
+    #'jazzmin',
     #'adminlte3',
     #'adminlte3_theme',
     'crispy_forms',
@@ -118,11 +118,11 @@ DATABASES = {
 
 
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+#      'default': {
+#          'ENGINE': 'django.db.backends.sqlite3',
+#          'NAME': BASE_DIR / 'db.sqlite3',
+#      }
+#  }
 
 
 
