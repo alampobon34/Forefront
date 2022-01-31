@@ -3,6 +3,6 @@ from joinNowApp.views import *
 
 
 urlpatterns = [
-    path("join-now/",join_now , name='join_now'),
+    path('join-now/',join_now , name='join_now'),
 
 ]
