@@ -88,20 +88,33 @@ WSGI_APPLICATION = 'foreFrontProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'ffbd_djngo',
-         'HOST': 'authentica-data.c9att0s0jgll.ap-southeast-1.rds.amazonaws.com',
-         'PORT': '3306',
-         'USER': 'adb_root',
-         'PASSWORD': 'B2QkPy~28tuHam',
-         'OPTIONS': {
-            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
-            }
-     }
+# DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.mysql',
+#          'NAME': 'ffbd_djngo',
+#          'HOST': 'authentica-data.c9att0s0jgll.ap-southeast-1.rds.amazonaws.com',
+#          'PORT': '3306',
+#          'USER': 'adb_root',
+#          'PASSWORD': 'B2QkPy~28tuHam',
+#          'OPTIONS': {
+#             "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+#             }
+#      }
 
- }
+#  }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'ffbd_djngo',
+        'USER': 'adb_root',
+        'PASSWORD': 'B2QkPy~28tuHam',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
+}
+
+
 
 
 # DATABASES = {
