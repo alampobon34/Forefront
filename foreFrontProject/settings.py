@@ -96,9 +96,9 @@ DATABASES = {
          'PORT': '3306',
          'USER': 'adb_root',
          'PASSWORD': 'B2QkPy~28tuHam',
-        'OPTIONS': {
-            'sql_mode': 'traditional',
-        }
+         'OPTIONS': {
+            "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
+            }
      }
 
  }
