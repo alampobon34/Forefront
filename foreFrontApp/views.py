@@ -56,15 +56,11 @@ def index(request):
 
 
 def about_us(request):
-    try:
-
-        sub_form = subscribeForm()
-        context = {
-            'sub_form': sub_form,
-        }
-        return render(request, 'about-us.html', context)
-    except:
-        pass
+    sub_form = subscribeForm()
+    context = {
+        'sub_form': sub_form,
+    }
+    return render(request, 'about-us.html', context)
 
 
 def news_details(request, id):
