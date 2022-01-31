@@ -249,7 +249,7 @@
         swal("Dear {{request.session.name}} !!", "{{message}}", "warning");
         var data = JSON.parse("{{url|escapejs}}");
         if (data == "#contact") {
-          window.location = "http://127.0.0.1:8000/#contact";
+          window.location = "http://54.198.203.80/#contact";
         }
       } else if (value == "success") {
         swal("Thanks {{request.session.name}}!", "{{message}}", "success");

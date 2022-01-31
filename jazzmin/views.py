@@ -49,6 +49,6 @@ def export(request,id):
             html="Couldn't download"
             return HttpResponse(html)
         else:
-            return render("http://127.0.0.1:8000/admin/foreFrontApp/name[1]/")
+            return render("http://54.198.203.80/admin/foreFrontApp/name[1]/")
     except:
         pass
