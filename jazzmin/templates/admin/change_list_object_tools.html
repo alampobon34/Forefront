@@ -1,0 +1,31 @@
+{% load i18n admin_urls jazzmin %}
+{% get_jazzmin_ui_tweaks as jazzmin_ui %}
+
+{% block object-tools-items %}
+    {% if has_add_permission %}
+        {% url cl.opts|admin_urlname:'add' as add_url %}
+        <a href="{% url 'export' id=request.resolver_match.url_name %}" class="btn {{ jazzmin_ui.button_classes.danger }} float-right ml-1" id="anc" onclick="myFunc()">
+            <i class="fa fa-file-export"></i> &nbsp; Export Data
+        </a>
+        <a href="{% add_preserved_filters add_url is_popup to_field %}" class="btn {{ jazzmin_ui.button_classes.success }} float-right">
+            <i class="fa fa-plus-circle"></i> &nbsp; {% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}
+        </a>
+    {% endif %}
+{% endblock %}
+
+
+<script type="text/javascript">
+    var text = window.location.href;
+    var arr = text.split("/");
+    var name = arr.slice(1).slice(-2)
+    name = name.replace(',','')
+    function myFunc(){
+        if(name.match("user")){
+        alert("You Can not download the user model..")
+        document.getElementById("anc").disabled = true;
+        return false
+    }
+    }
+</script>
+
+

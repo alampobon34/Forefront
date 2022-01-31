@@ -28,12 +28,15 @@ SECRET_KEY = 'django-insecure-m0m5e@=b8s#j2t35puseb0q8*+hi0=ldqqlmb(pz#is%6hz9@m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['54.198.203.80']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+    #'adminlte3',
+    #'adminlte3_theme',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'foreFrontApp',
     'joinNowApp',
+    #'adminApp',
 ]
 
 SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
@@ -85,16 +89,26 @@ WSGI_APPLICATION = 'foreFrontProject.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ffbd_djngo',
-        'HOST': 'authentica-data.c9att0s0jgll.ap-southeast-1.rds.amazonaws.com',
-        'PORT': '3306',
-        'USER': 'adb_root',
-        'PASSWORD': 'B2QkPy~28tuHam',
-    }
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'ffbd_djngo',
+         'HOST': 'authentica-data.c9att0s0jgll.ap-southeast-1.rds.amazonaws.com',
+         'PORT': '3306',
+         'USER': 'adb_root',
+         'PASSWORD': 'B2QkPy~28tuHam',
+     }
 
-}
+ }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
