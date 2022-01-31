@@ -4,8 +4,8 @@ from foreFrontApp.views import *
 
 urlpatterns = [
     path("", index, name='home'),
-    path("about-us/", about_us, name='about-us'),
-    path("news-details/<int:id>/", news_details, name='news-details'),
+    path("about-us/", about_us, name='about_us'),
+    path("news-details/<int:id>/", news_details, name='news_details'),
     path("subscribe", subscribe, name='subscribe'),
 
 ]
