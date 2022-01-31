@@ -26,7 +26,7 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'django-insecure-m0m5e@=b8s#j2t35puseb0q8*+hi0=ldqqlmb(pz#is%6hz9@m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['54.198.203.80','54.198.203.80:8000','54.198.203.80:8080','forefront-bd.com','www.forefront-bd.com']
 
